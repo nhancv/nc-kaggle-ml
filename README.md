@@ -47,5 +47,16 @@ export KAGGLE_KEY=xxxxxxxxxxxxxx
 kaggle competitions submit -c titanic -f submission.csv -m "submit solution"
 ```
 
+#### Execute .ipynb file
+```
+# Install jupyter, nbconvert
+pip install ipython jupyter nbconvert
 
+# Convert to py script
+jupyter nbconvert --to script titanic.ipynb
+
+# Run py script
+ipython titanic.py
+
+````
 
