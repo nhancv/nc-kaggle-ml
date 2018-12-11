@@ -26,3 +26,26 @@ jupyter kernelspec list
 pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn
 pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn
 ```
+
+#### Install kaggle
+Install cli: https://github.com/Kaggle/kaggle-api
+```
+pip install kaggle —upgrade
+
+# Auth
+touch ~/.kaggle/kaggle.json
+chmod 600 ~/.kaggle/kaggle.json
+
+# Update kaggle.json file
+# Get api token key at https://www.kaggle.com/nhancv/account
+export KAGGLE_USERNAME=nhancv
+export KAGGLE_KEY=xxxxxxxxxxxxxx
+```
+
+#### Submit competition
+```
+kaggle competitions submit -c titanic -f submission.csv -m "submit solution"
+```
+
+
+
