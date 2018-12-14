@@ -23,8 +23,8 @@ jupyter kernelspec list
 
 #### Install python libs
 ```
-pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn
-pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn
+pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks
+pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks
 ```
 
 #### Install kaggle
