@@ -23,8 +23,24 @@ jupyter kernelspec list
 
 #### Install python libs
 ```
-pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks
-pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks
+pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks lightgbm yellowbrick
+pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks lightgbm yellowbrick
+```
+
+Install LightGBM on mac
+
+```
+#https://github.com/Microsoft/LightGBM/blob/master/docs/Installation-Guide.rst
+
+brew install cmake
+brew install libomp
+git clone --recursive https://github.com/Microsoft/LightGBM ; cd LightGBM
+mkdir build ; cd build
+cmake ..
+make -j4
+
+cd ../../
+rm -rf LightGBM
 ```
 
 #### Install kaggle
