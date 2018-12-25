@@ -46,7 +46,7 @@ rm -rf LightGBM
 #### Install kaggle
 Install cli: https://github.com/Kaggle/kaggle-api
 ```
-pip install kaggle —upgrade
+pip install kaggle --upgrade
 
 # Auth
 touch ~/.kaggle/kaggle.json
