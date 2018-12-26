@@ -1,0 +1,6 @@
+out
+build
+.gradle
+.DS_Store
+*.pyc
+.idea/workspace.xml
