@@ -1,0 +1,16 @@
+https://www.kaggle.com/barelydedicated/bank-customer-churn-modeling
+
+Phân tích dữ liệu Bank Churn Modelling và trả lời các câu hỏi sau 
+
+- Dùng các phân tích EDA cho biết lý do tại sao khách hàng Exit 
+- Dùng Random Forest cho biết tiêu chí nào quan trọng nhất để đánh giá khách hàng Churn hay không 
+- Có Feature nào trong data Có Correlation cao không 
+- Dùng RFE + SVC cho biết Feature Ranking của các tiêu chí trong dữ liệu
+- Xây dựng các hướng tiếp cận (như bài P13-Customer Churn) cho biết trong các Model Machine learning bạn sẽ chọn 3 model nào để kết hợp nhắm tăng độ chính xác của bài toán ? Lý do tại sao 
+- Sử dụng 3 model đó chạy kết hợp dùng Bagging, Boosting, và Stacking và cho biết kết quả
+- Xây dựng một mô hình mạng Neural để chạy bài toán này và cho biết kết quả 
+- Cho biết kết luận cuối cùng của bạn sẽ lựa chọn cách tiếp cận nào cuối cùng ?
+
+Các câu hỏi trên cần trả lời và chụp mà hình kết quả tương ứng làm minh chứng. Gửi câu trả lời hạn chót 30/01/2019 dưới dạnh pdf file. 
+
+Tham khảo chính :  Bài Customer Churn P13
