@@ -1,0 +1,111 @@
+## All data Encoder
+
+Naive Bayes accuracy: 0.775
+Logistic Regression accuracy: 0.798
+Random Forest accuracy: 0.847750
+Linear SVM accuracy: 0.798250
+RBF SVM accuracy: 0.798250
+K Nearest Neighbor accuracy: 0.738500
+ANN accuracy: 0.798250
+
+## Feature Selection
+Drop: ["Surname", "RowNumber", "CustomerId"]
+
+Naive Bayes accuracy: 0.774
+Logistic Regression accuracy: 0.795
+Random Forest accuracy: 0.851750
+Linear SVM accuracy: 0.798250
+RBF SVM accuracy: 0.798250
+K Nearest Neighbor accuracy: 0.739250
+ANN accuracy: 0.635250
+
+## Feature Importances
+AttSelection = ["Age", "NumOfProducts__2", "Balance", "IsActiveMember", "CustomerId",
+                "Surname", "CreditScore", "EstimatedSalary", "EstimatedSalary", "RowNumber",
+                "NumOfProducts__3", "Geography", "Tenure", "NumOfProducts__1",
+                "Exited"]
+
+Naive Bayes accuracy: 0.775
+Logistic Regression accuracy: 0.798
+Random Forest accuracy: 0.842750
+Linear SVM accuracy: 0.798250
+RBF SVM accuracy: 0.798250
+K Nearest Neighbor accuracy: 0.735750
+ANN accuracy: 0.798250
+
+# RankStatistics
+	Attributes	Ranking	Support
+0	RowNumber	1	True
+1	CustomerId	1	True
+2	Surname	1	True
+3	CreditScore	1	True
+6	Age	1	True
+8	Balance	1	True
+10	IsActiveMember	1	True
+11	EstimatedSalary	1	True
+12	NumOfProducts__1	1	True
+13	NumOfProducts__2	1	True
+
+Naive Bayes accuracy: 0.773
+Logistic Regression accuracy: 0.798
+Random Forest accuracy: 0.834500
+Linear SVM accuracy: 0.798250
+RBF SVM accuracy: 0.798250
+K Nearest Neighbor accuracy: 0.738500
+ANN accuracy: 0.791750
+
+## Feature Reduction: PCA
+
+Naive Bayes accuracy: 0.809
+Logistic Regression accuracy: 0.833
+Random Forest accuracy: 0.846500
+Linear SVM accuracy: 0.849750
+RBF SVM accuracy: 0.798000
+K Nearest Neighbor accuracy: 0.815250
+ANN accuracy: 0.856250
+
+## Outlier Removal Approach
+
+Naive Bayes accuracy: 0.778
+Logistic Regression accuracy: 0.787
+Random Forest accuracy: 0.841778
+Linear SVM accuracy: 0.786667
+RBF SVM accuracy: 0.786667
+K Nearest Neighbor accuracy: 0.725926
+ANN accuracy: 0.786667
+
+## Neural Network Approach
+val_acc did not improve from 0.78667
+
+## Bagging Boosting and Stacking 
+Accuracy: 0.78 (+/- 0.00) [NaiveBayesLearning]
+Accuracy: 0.79 (+/- 0.00) [LogisticRegressionLearning]
+Accuracy: 0.84 (+/- 0.02) [RandomForestLearning]
+Accuracy: 0.79 (+/- 0.00) [SVMLearningLinear]
+Accuracy: 0.79 (+/- 0.00) [SVMLearningRBF]
+Accuracy: 0.73 (+/- 0.01) [KNNLearning]
+Accuracy: 0.76 (+/- 0.05) [ANNLearning]
+
+## EnsembleVoteClassifier
+Accuracy: 0.84 (+/- 0.01) [RandomForestLearning]
+Accuracy: 0.78 (+/- 0.00) [NaiveBayesLearning]
+Accuracy: 0.73 (+/- 0.01) [KNNLearning]
+Accuracy: 0.81 (+/- 0.01) [Ensemble]
+
+## Majority voting
+ROC AUC: 0.84 (+/- 0.01) [RandomForestLearning]
+ROC AUC: 0.78 (+/- 0.00) [NaiveBayesLearning]
+ROC AUC: 0.73 (+/- 0.01) [KNNLearning]
+ROC AUC: 0.80 (+/- 0.01) [Majority voting]
+
+## AdaBoostClassifier
+Decision tree train/test accuracies 1.000/0.798
+AdaBoost train/test accuracies 1.000/0.793
+
+# Stacking Classifier
+Accuracy: 0.84 (+/- 0.01) [Random Forest]
+Accuracy: 0.78 (+/- 0.00) [Naive Bayes]
+Accuracy: 0.73 (+/- 0.01) [KNN]
+Accuracy: 0.84 (+/- 0.02) [Stacking Classifier]
+
+
