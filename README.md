@@ -8,23 +8,44 @@
 https://nteract.io/desktop
 
 #### Install kernal
+https://nteract.io/kernels
 ```
-python -m pip install ipykernel virtualenv
-python -m ipykernel install
+# In .bash_profile
+export PYTHON3_ROOT="$PROGRAM_FILES/python/py3_0"
+alias python3.setup="python3 -m venv $PYTHON3_ROOT && python3.activate"
+alias python3.destroy="rm -rf $PYTHON3_ROOT"
+alias python3.activate="source $PYTHON3_ROOT/bin/activate"
 
-python3 -m pip install ipykernel virtualenv
-python3 -m ipykernel install
-```
 
-#### View kernel list
-```
-jupyter kernelspec list
+# In terminal
+
+## You need setup new env first time
+python3.setup
+
+*Note*: new env will be activated after setup automatically
+
+## If the env already setup, you can just active it before working
+python3.activate
+
+## Install kernel
+(py3_0) ~|⇒ python -m pip install ipykernel
+## Install kernel with specific name of env
+(py3_0) ~|⇒ python -m ipykernel install --user --name "py3_0" --display-name "Python (3_0)"
+
+## You should deactivate env after working
+(py3_0) ~|⇒ deactivate
+
+
+## View kernel list
+(py3_0) ~|⇒ jupyter kernelspec list
+
+## To uninstall kernel
+(py3_0) ~|⇒ jupyter kernelspec uninstall <alias>
 ```
 
 #### Install python libs
 ```
-pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks lightgbm yellowbrick
-pip install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks lightgbm yellowbrick
+(py3_0) ~|⇒ pip3 install numpy scipy matplotlib pandas statsmodels scikit-learn IPython seaborn nltk plotly cufflinks lightgbm yellowbrick
 ```
 
 Install LightGBM on mac
